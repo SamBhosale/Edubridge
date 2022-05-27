@@ -10,7 +10,7 @@ public class ReversArray {
 			System.out.print(" " + arr[i]);
 		}
 		
-		int j= arr.length;
+//		int j= arr.length;
 //		while(j)
 //		{
 //			System.out.println(arr[j]);
