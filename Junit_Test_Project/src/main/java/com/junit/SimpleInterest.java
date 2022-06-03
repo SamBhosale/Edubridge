@@ -1,4 +1,4 @@
-package com_junit;
+package com.junit;
 
 public class SimpleInterest {
 	public double calculate(double p,double r, double t)

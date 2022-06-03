@@ -1,4 +1,4 @@
-package com_junit;
+package com.junit;
 
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
@@ -10,6 +10,8 @@ import org.junit.Test;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.RepeatedTest;
+
+import com.junit.CheckValue;
 
 
 public class TestArray {

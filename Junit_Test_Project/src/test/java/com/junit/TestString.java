@@ -1,4 +1,4 @@
-package com_junit;
+package com.junit;
 
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
@@ -6,7 +6,9 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
-public class StringTest {
+import com.junit.StringCompair;
+
+public class TestString {
 	
 	 @Test
 	 public void testcase1() 

@@ -1,12 +1,14 @@
-package com_junit;
+package com.junit;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.condition.EnabledOnOs;
+import org.junit.jupiter.api.condition.OS;
 
-public class Annotation {
+public class TestAnnotation {
 	
 	    
 	    @BeforeAll
@@ -36,6 +38,7 @@ public class Annotation {
 	        
 	    }
 	    
+
 	    @AfterEach
 	    public void afterEach()
 	    {

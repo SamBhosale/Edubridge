@@ -1,4 +1,4 @@
-package com_junit;
+package com.junit;
 
 public class CheckValue {
 	

@@ -1,4 +1,4 @@
-package com_junit;
+package com.junit;
 
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
@@ -9,7 +9,10 @@ import java.util.concurrent.TimeUnit;
 import org.junit.Test;
 import org.junit.jupiter.api.Timeout;
 
-public class Check_Test_Case {
+import com.junit.Factorial;
+import com.junit.Sorting;
+
+public class Test_Test_Cases {
 	
 	@Test   //annotation
 	public void testcase1()
