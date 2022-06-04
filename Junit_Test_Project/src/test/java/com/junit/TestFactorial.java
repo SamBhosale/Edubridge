@@ -12,7 +12,7 @@ import org.junit.jupiter.api.Timeout;
 import com.junit.Factorial;
 import com.junit.Sorting;
 
-public class Test_Test_Cases {
+public class TestFactorial {
 	
 	@Test   //annotation
 	public void testcase1()
