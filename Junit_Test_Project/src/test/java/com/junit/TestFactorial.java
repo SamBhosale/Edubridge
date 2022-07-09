@@ -18,7 +18,7 @@ public class TestFactorial {
 	public void testcase1()
 	{
 		Factorial f=new Factorial();
-		long actualOutput=f.factorial(5);
+		long actualOutput=f.factorial(6);
 		long expectedOutput=120;
 		assertEquals(expectedOutput, actualOutput);
 		
