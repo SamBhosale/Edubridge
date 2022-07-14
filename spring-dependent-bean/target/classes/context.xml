@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:c="http://www.springframework.org/schema/c"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+  
+
+   
+    <bean id="car" class="com.dependentobject.entity.Car">
+        <constructor-arg  value="MH-14-AB2342"></constructor-arg>
+        <constructor-arg  value="S seriex"></constructor-arg>
+        <constructor-arg  value="Farari F1"></constructor-arg>
+        <constructor-arg  value="Racing"></constructor-arg>
+   </bean>
+  
+   <bean id="driver" class="com.dependentobject.entity.Driver">
+        <constructor-arg  value="D-123 "></constructor-arg>
+        <constructor-arg  value="Atul"></constructor-arg>
+        <constructor-arg  value="376743763"></constructor-arg>
+        <constructor-arg>
+        	 <ref bean="car"/>
+        </constructor-arg>    
+   </bean>
+   
+   
+  <bean name="car2" class="com.dependentobject.entity.Car">
+		<constructor-arg value="WB-40-AH-9878"/>
+		<constructor-arg value="AXY model"/>
+		<constructor-arg value="Sedan"/>
+		<constructor-arg value="Suzuki"/>
+	</bean>
+	
+	<bean name="driver2" class="com.dependentobject.entity.Driver">
+		<constructor-arg value="D201"/>
+		<constructor-arg value="Anil"/>
+		<constructor-arg value="0328482304"/>
+		<constructor-arg>
+			<ref bean="car2"/>
+		</constructor-arg>
+	</bean>
+   
+   
+  
+   <bean id="car1" class="com.dependentobject.entity.Car">
+	   <property name="carNo">
+	   <value>MH-AT-DL223</value>
+	   </property>
+	   <property name="carModel">
+	   <value>SUV</value>
+	   </property>
+	   <property name="carBrand">
+	   <value>TATA</value>
+	   </property>
+		<property name="carType">
+	   <value>Sports</value>
+	   </property>  
+ 	</bean>
+ 
+	 <bean id="driver1" class="com.dependentobject.entity.Driver">
+		   <property name="driverId">
+		   		<value>D-234</value>
+		   </property>
+		   
+		   <property name="driverName">
+		   		<value>Suraj</value>
+		   </property>
+		   
+		   <property name="driverContact">
+		   		<value>7347528938</value>
+		   </property> 
+		   
+		   <property name="car">
+		            
+		             <ref bean="car1"/>
+		          
+		   </property>
+		    
+	 </bean>
+        
+  </beans>

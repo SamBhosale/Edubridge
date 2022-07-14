@@ -1,0 +1,26 @@
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="question1" class="com.spring.entity.QuestionInfo">
+		<constructor-arg value="2345"/>
+		<constructor-arg value="What is Java?"/>
+		<constructor-arg>
+			<map>
+				<entry key="Anik" value="Is is an Object oriented programming language."/>
+				<entry key="Krishnan" value="Java is used for application development."/>
+				<entry key="Rajeswari" value="Java is a General purpose programming language."/>
+			</map>
+		</constructor-arg>
+	</bean>
+	
+	
+	<bean id="question2" class="com.spring.entity.QuestionInfo">
+		<property name="questionId" value="2555"/>
+		<property name="question" value="What is Spring?"/>
+		<property name="answers">
+			<map>
+				<entry key="Anik" value="Spring's asynchronous, nonblocking architecture means you can get more from your computing resource."/>
+				<entry key="Krishnan" value="The Spring Framework provides a comprehensive programming and configuration model for modern Java-based enterprise applications."/>
+				<entry key="Rajeswari" value="The Spring Framework is an application framework and inversion of control container for the Java platform."/>
+			</map>
+		</property>
+	</bean>
+</beans>
